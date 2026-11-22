@@ -72,3 +72,13 @@ melodic, singalong songs. Almost no hip-hop, metalcore or jazz.
 3. Rank styles by weight → taste profile in this file.
 4. For top styles, pick artists and tracks absent from my library → `playlists/*.md`
    with a reason and a YouTube link per song.
+
+## Style playlists (2026-11-22)
+
+- All 4,815 likes sorted into 16 style playlists → `exports/style-playlists/` (one TuneMyMusic CSV each,
+  songs ordered by artist). Summary with counts: `exports/style-playlists/README.md`.
+- Each artist was labelled with one style → `data/anghami/artist_styles.tsv` (2,598 primary artists).
+  Edit a row there and rerun `python3 scripts/build_style_playlists.py` to move an artist.
+- Overrides: Arabic script → Arabic & World, Cyrillic → Russian Pop, "(… Piano …)" / "(Cover)" in the
+  title → Acoustic & Piano Covers.
+- Céline Dion is in French Chanson (most liked songs are French).

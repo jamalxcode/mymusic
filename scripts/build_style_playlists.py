@@ -30,7 +30,7 @@ for r in csv.DictReader((root / "data/anghami/likes.csv").open(encoding="utf-8")
         s = "arabic-world"
     elif re.search(r"[Ѐ-ӿ]", text):
         s = "russian"
-    elif re.search(r"\b(piano|lullaby)\b", text, re.I) or re.search(r"\(cover\)|acoustic cover", text, re.I):
+    elif re.search(r"[\(\[][^\)\]]*\b(piano|cover)\b[^\)\]]*[\)\]]", r["title"], re.I):
         s = "covers"
     else:
         parts = split(r["artist"])
