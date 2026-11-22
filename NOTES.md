@@ -16,7 +16,7 @@
   3. Screenshots (slow for 8k songs).
 
 ### YouTube
-- No playlist link provided yet. Needs to be Public/Unlisted, or a Google Takeout CSV.
+- Not used (decided 2026-11-22): recommendations are built from the Anghami likes only.
 
 ## 2026-11-22 — Anghami likes imported
 
@@ -67,7 +67,7 @@ melodic, singalong songs. Almost no hip-hop, metalcore or jazz.
 - To recheck any candidate list: `python3 scripts/check_new.py <file.tsv>` (columns: style, artist, title, why).
 
 ## Plan
-1. ✅ Anghami normalized (partial — 4,815 of ~8.4K). YouTube still to come.
+1. ✅ Anghami normalized (partial — 4,815 of ~8.4K). YouTube not used — Anghami only.
 2. Dedupe; count artists; tag each artist with genre / region / era / language.
 3. Rank styles by weight → taste profile in this file.
 4. For top styles, pick artists and tracks absent from my library → `playlists/*.md`
